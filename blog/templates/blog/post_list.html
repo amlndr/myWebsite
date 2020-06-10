@@ -1,13 +1,33 @@
 {% extends 'blog/base.html' %}
-
+<html>
 {% block content %}
+<div class="profile">
+    <h1>welcome!</h1>
+</div>  
+
+<div class="main">
+    <div class="containP">
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                    <div class="tile is-child box ">
+                        <div class="post">
+                            <div class="date">
+                                {{ post.published_date }}
+                            </div>
+                            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                            <!--<p>{{ post.text|linebreaksbr }}</p> use the hover extra box thing-->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
+        {% endfor %}
+        </div> 
+    </div> 
+</div>
+
+
+
+    {% endblock %}
+
+</html>
