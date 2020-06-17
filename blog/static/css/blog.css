@@ -9,10 +9,15 @@
     display:inline-block;
 }
 
+.mainL{
+    text-align: center;
+}
+.containerp{
+    display:inline-block;
+    margin:10px;
+    padding:10px;
 
-
-
-
+}
 .date{
     color:pink;
     font-size: 10px;

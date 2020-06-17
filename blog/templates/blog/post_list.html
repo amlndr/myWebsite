@@ -3,27 +3,30 @@
 {% block content %}
 <div class="profile">
     <h1>welcome!</h1>
-</div>  
+</div> 
 
-
-        {% for post in posts %}
-        <div class="tile" style="display:inline-block;  ">
-                <div class="tile box" style="margin:5px;padding:13px;width:400px; height:100px;overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+<div class="mainL">
+    <h3>articles</h3>
+    <div class="containerp">
+        {% for post in posts %} 
+        <div class="tile is-ancestor is-vertical">
+            <div class="tile is-parent is-vertical">
+                <div class="tile is-child box is-5" style="width:500px;">
                     <div class="post">
                         <div class="date">
                             {{ post.published_date }}
                         </div>
                         <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-                       <p style="font-size: 12px;">{{ post.text|linebreaksbr }}</p> <!--use the hover extra box thing--></div>
+                        <p style="font-size: width:400px; font-size:12px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">{{ post.text }}</p> <!--use the hover extra box thing--></div>
                     </div>
-                </div>
-            </div>
+                    {% endfor %} 
         </div>
-    {% endfor %}
-    </div> 
 
+        
 
-
+    
+</div>
+</div>
 
 
     {% endblock %}
