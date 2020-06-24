@@ -19,7 +19,7 @@
                             {{ post.published_date }}
                         </div>
                         <h2><a class="titleLink" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-                        <p style="font-size: width:400px; font-size:12px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">{{ post.text }}</p> <!--use the hover extra box thing--></div>
+                        <p style="font-size: width:400px; font-size:12px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">{{ post.text }}</p> </div>
                     </div>
                     {% endfor %} 
         </div>
