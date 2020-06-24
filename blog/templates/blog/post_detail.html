@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="fulltext">
     <div class="post">
         {% if post.published_date %}
             <div class="date">
@@ -10,4 +11,5 @@
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+</div>
 {% endblock %}

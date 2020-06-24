@@ -1,18 +1,57 @@
-/*search*/
-nav{
-    padding: 5px;;
+h2, .titleLink {
+    font-size:40px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    color:#E0D7FF;
 }
+
+.date{
+    color:pink;
+    font-size: 12px;
+}
+
+p, .date,nav{
+    font-family: 'Didact Gothic', sans-serif;
+}
+/*base*/
+nav{
+    padding: 5px;
+}
+
+.navlogo{
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    color:#E0D7FF;
+    font-size:20px;
+}
+
+
 .in{
+    background-color: white;
     border:none;
     border-radius: 5px;
     font-size: 15px;
     text-align: center;
-    height:30px;
+    
+}
+
+.searchBox{
+    background-color: white;
+    border:none;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+    height:50px;
+    margin-left:5px;
+    
+    padding-top:20px;
 }
 
 #goS{
     display: none;
 }
+
+/*post list*/
 
 .profile{
     background-image:url('/static/profilecov.jpg');
@@ -39,9 +78,16 @@ nav{
     padding:10px;
 
 }
-.date{
-    color:pink;
-    font-size: 10px;
+
+a:hover{
+    color:#beebe9;
+}
+
+/*post detail*/
+.fulltext{
+    margin-top:70px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 @media only screen and (max-width:600px){
