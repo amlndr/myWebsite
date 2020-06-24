@@ -1,3 +1,4 @@
+{% load static %}
 {% extends 'blog/base.html' %}
 <html>
 {% block content %}
@@ -9,7 +10,7 @@
 <div class="mainL">
     
     <br>
-        <img src="/static/ilus1.png" width="40%" height="40%">
+        <img src="{% static 'blog/ilus1.png'" width="40%" height="40%">
    
       <h3>welcome to my blog! go ahead and read some articles <3 </h3>
 
