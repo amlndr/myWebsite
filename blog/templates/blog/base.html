@@ -33,7 +33,10 @@
                 <div class="navbar-item "> 
                     <form method="GET" action="{% url 'search'%}">
                         
-                        <input name="q" class="input is-rounded is-small" type="text" placeholder="search an article..." value="{{request.GET.q}}"></div>
+                        <input name="q" class="input is-rounded is-small" 
+                        type="text" placeholder="search an article..." 
+                        value="{{request.GET.q}}"
+                        style="display: inline-block; "></div>
                         
                     </form>
 
