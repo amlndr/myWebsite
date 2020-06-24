@@ -5,24 +5,27 @@ nav{
 .in{
     border:none;
     border-radius: 5px;
-    
     font-size: 15px;
     text-align: center;
     height:30px;
 }
 
 #goS{
-    display:none;
+    display: none;
 }
 
 .profile{
     background-image:url('/static/profilecov.jpg');
-    height:400px;
+    height:100%;
     width:100%;
     background-size: cover;
     background-position:center;
+    
 }
 
+.postBox{
+    width:600px;
+}
 .fixBG{
     position:fixed;
 }
@@ -39,4 +42,10 @@ nav{
 .date{
     color:pink;
     font-size: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .postBox{
+        width:330px;
+    }
 }

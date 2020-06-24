@@ -21,5 +21,5 @@ def search(request):
 
     posts = Post.objects.filter(Q(title__icontains=query) | Q(text__icontains=query))
     
-    return render(request,template, ('results',template ,{'posts' : posts})
+    return render(request,template ,{'posts' : posts})
 
