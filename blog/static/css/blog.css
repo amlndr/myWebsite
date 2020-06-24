@@ -1,12 +1,30 @@
+/*search*/
+nav{
+    padding: 5px;;
+}
+.in{
+    border:none;
+    border-radius: 5px;
+    
+    font-size: 15px;
+    text-align: center;
+    height:30px;
+}
+
+#goS{
+    display:none;
+}
+
 .profile{
     background-image:url('/static/profilecov.jpg');
-    margin-top: 0;
     height:400px;
     width:100%;
     background-size: cover;
     background-position:center;
-    text-align:center;
-    display:inline-block;
+}
+
+.fixBG{
+    position:fixed;
 }
 
 .mainL{
