@@ -1,12 +1,11 @@
 
-}
+
 /*base*/
 
 
 .navlogo{
     font-weight: bold;
-    font-family: 'Amatic SC', cursive;
-    color:#E0D7FF;
+    ;
     font-size:20px;
 }
 
@@ -19,7 +18,9 @@
     text-align: center;
     
 }
-
+ #mobile{
+     display: none;
+ }
 .searchBox{
     background-color: white;
     border:none;
@@ -39,9 +40,19 @@
     display: none;
 }
 
-/*post list
+/*post list*/
 
-*/
+.profile{
+    background-image:url('/static/images/profilecov.jpg');
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+    display: inline-block;
+    padding:10px;
+    
+}
 
 .postBox{
     width:600px;
@@ -70,7 +81,15 @@ a:hover{
 }
 
 @media only screen and (max-width:600px){
+  
+   
     .postBox{
         width:330px;
     }
+
+    .myphoto{
+        width:200px;
+        height:200px;
+    }
+
 }

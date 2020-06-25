@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}" type="text/css" >
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
-
-        <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+<!--nav ver 1--><!--
+        <nav id="mobile" class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand ">
                 <a class="navbar-item navlogo" href="{% url 'post_list' %}" style="font-size:15px;">
                         <img src="/static/images/logo_ok.png" alt="logo" width="30px" height="100px" style="border-radius:50px; margin-right:5px;"> #DiraDiKosanAja
@@ -44,9 +44,32 @@
             </div>
         </div>
    
-    </nav>
+    </nav>-->
 
-  
+        <!--nav ver 2-->
+        <nav  class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+            <nav class="level is-mobile">
+            <div class="level-left">
+                <div class="level-item">
+            <a class="navbar-item is-primary" href="{% url 'post_list' %}" style="font-size:15px;">
+                <img src="/static/images/logo_ok.png" alt="logo" width="30px" height="100px" style="border-radius:50px; margin-right:5px;"> #DiraDiKosanAja
+            </a>
+            </div></div>
+
+            <div class="level-right"><div class="level-item">
+        <form method="GET" action="{% url 'search'%}">
+                        
+            <input name="q" class="input is-rounded is-small" 
+            type="text" placeholder="search an article..." 
+            value="{{request.GET.q}}"
+            style="width:300px;margin-top:12px; margin-right:8px;"></div>
+            
+        </form>
+    </div>
+</nav>
+
+
+        </nav>
  
 
     <body>
