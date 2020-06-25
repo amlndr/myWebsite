@@ -5,45 +5,20 @@
 
 .navlogo{
     font-weight: bold;
-    ;
     font-size:20px;
-}
-
-
-.in{
-    background-color: white;
-    border:none;
-    border-radius: 5px;
-    font-size: 15px;
     text-align: center;
     
-}
- #mobile{
-     display: none;
- }
-.searchBox{
-    background-color: white;
-    border:none;
-    border-radius: 30px;
-    font-size: 15px;
-    text-align: center;
-    height:40px;
-    margin-left:5px;
-    margin-top:5px;
-    margin-bottom:2px;
-    margin-right: 10px;;
     
-    padding-top:20px;
 }
 
-#goS{
-    display: none;
-}
+
+
+
 
 /*post list*/
 
 .profile{
-    
+    background-image:url('/static/images/profilecov.jpg');
     height:100%;
     width:100%;
     background-size: cover;
@@ -75,7 +50,7 @@ a:hover{
 
 /*post detail*/
 .fulltext{
-    margin-top:70px;
+    
     margin-left:10px;
     margin-right:10px;
 }
@@ -88,8 +63,16 @@ a:hover{
     }
 
     .myphoto{
+        width:150px;
+        height:150px;
+    }
+
+}
+
+@media only screen and (max-width:3000px){
+    
+    .myphoto{
         width:200px;
         height:200px;
-    }
 
 }
