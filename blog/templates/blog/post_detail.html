@@ -1,16 +1,51 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="container">
-    <div class="post" style="margin:0 20px 0 20px;">
+<div class="profile">
+    <div class="level">
+        <div class="level-item has-text-centered">
+            <img class="myphoto" src="/static/images/ilus2.png" width="40%" height="40%">
+        </div>
+    </div>
+<div class="containerd box" style="background-color: ">
+    <a onclick="toTop()" id="topBtn">
+        <i class="fas fa-chevron-circle-up"></i></a>
+    <div class="post" >
+        <a href="{% url 'post_list' %}">
+            <button class="delete is-medium"
+            style="position:absolute; right:5%;margin-right: 10px;"></button>
+        </a>
         {% if post.published_date %}
-        <br> 
+        <div class="center">
             <div class="date">
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h3 class="title is-3"
+            style="color:#b3b388;">{{ post.title }}</h3>
+        </div>
+        <p style="text-align: left;">{{ post.text|linebreaksbr }}</p>
     </div>
 </div>
+
+<script>
+    var btn =document.getElementById("topBtn");
+
+    //if scrolls more than 20px
+    window.onscroll =function(){scrollFunct()};
+
+    function scrollFunct(){
+        if (document.body.scrollTop >20 || 
+            document.documentElement.scrollTop >20){
+                btn.style.display="block";
+            }else{
+                btn.style.display="none";
+            }    
+    }
+
+    function toTop(){
+        document.body.scrollTop =0;
+        document.documentElement.scrollTop =0;
+    }
+</script>
 {% endblock %}

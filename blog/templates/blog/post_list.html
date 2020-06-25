@@ -4,21 +4,39 @@
 <html>
 {% block content %}
 
-<div class="profile" style="background-image:url('/static/images/profilecov.jpg');" >
-<div class="level">
-    <div class="level-item has-text-centered">
-    
-        <img class="myphoto" src="/static/images/ilus1.png" width="40%" height="40%">
-     </div>
-</div>
+<div class="profile">
+    <div class="level">
+        <div class="level-item has-text-centered">
+            <img class="myphoto" src="/static/images/ilus1.png" width="40%" height="40%">
+        </div>
+    </div>
 
+    <div class="desc">
+        <h4 class="title is-4">Welcome to my blog!</h4>
+        <p>I am putting all the artsy and opinion related things I've been doing 
+            during this pandemic. <br> Want to see other things? 
+            Feel free to check out <b>my social media on the links below</b> 
+            <br><i class="fas fa-heart" style="color:#b3b388;"></i>
+            <i class="fas fa-heart" style="color:ffb7ce;"></i>
+            <i class="fas fa-heart" style="color:#b3b388;"></i>
+        </p>
+    </div>
 
+    <div class="tags are-medium " style="display:inline-block; text-align:center">
+        <span class="tag is-white box">
+            <a href="https://www.instagram.com/amelianadira99/"><i class="fas fa-hashtag"></i><b>instagram</b></a>
+        </span>
+        <span class="tag is-white box">
+            <a href="https://brhenti.wordpress.com/"><i class="fas fa-hashtag"></i><b>wordpress</b></a>
+        </span>
+        <span class="tag is-white box">
+            <a href="https://www.linkedin.com/in/nadiraameliaD"><i class="fas fa-hashtag"></i><b>linkedin</b></a>
+        </span>
+        
+    </div>
 </div>
 
 <div class="mainL">
-    
- 
-      
     <div class="containerp" >
         {% for post in posts %} 
         <div class="tile is-ancestor is-vertical">
@@ -28,8 +46,14 @@
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h2><a class="titleLink" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-                        <p style="font-size: width:400px; font-size:12px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">{{ post.text }}</p> </div>
+                        <h4 class="title is-4">
+                            <a class="titleLink" href="{% url 'post_detail' pk=post.pk %}">
+                                {{ post.title }}</a>
+                        </h4>
+                        <p style="font-size:12px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">
+                            {{ post.text }}
+                        </p> 
+                    </div>
                     </div>
                     {% endfor %} 
         </div>

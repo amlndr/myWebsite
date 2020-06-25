@@ -1,24 +1,36 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.date{
+    color:#ffb7b2;
+    font-size:12px;
+}
 
-{%load static%}
+
 /*base*/
-
+a{
+    color:#b3b388;
+}
+a:hover{
+    color:#ffb7ce;
+    
+}
 
 .navlogo{
     font-weight: bold;
-    font-size:20px;
     text-align: center;
     
     
 }
 
-
-
-
-
 /*post list*/
 
+.desc{
+    margin:30px;
+}
+
 .profile{
-    height:100%;
+    height:auto;
     width:100%;
     background-size: cover;
     background-position:center;
@@ -43,17 +55,34 @@
 
 }
 
-a:hover{
-    color:#beebe9;
-}
+
 
 /*post detail*/
+.containerd{
+    display:inline-block;
+    margin:20px;
+    padding:20px;
+
+}
+
 .fulltext{
     
     margin-left:10px;
     margin-right:10px;
 }
+.center{
+    text-align: center;
+    margin-bottom:20px;
+}
 
+#topBtn{
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    font-size: 44px;
+    display: none;
+    
+}
 @media only screen and (max-width:600px){
   
    
