@@ -15,11 +15,12 @@
     <nav class="level" >
         <div class="level-left">
             <div class="level-item">
-                <a href="{% url 'post_list' %}" style="font-size:20px;margin-left: 8px;">
-                    <img src="/static/images/logo.png" alt="logo" 
-                    width="30px" height="30px" 
-                    style="border-radius:50px; margin-right:3px;"> 
-                    #DiraDi<b>Kosan</b>Aja
+                <a href="{% url 'post_list' %}" style="font-size:20px;" 
+                    class="is-family-sans-serif">
+                        <img src="/static/images/logo.png" alt="logo" 
+                        width="30px" height="30px" 
+                        style="border-radius:50px; margin-right:3px;"> 
+                        #DiraDi<b>Kosan</b>Aja
                 </a>
             </div>
         </div>
@@ -32,14 +33,13 @@
                             <input name="q" class="input is-rounded is-small " 
                                 type="text" placeholder="search an article..." 
                                 value="{{request.GET.q}}"
-                                style="width:300px;">
+                                style="width:300px;margin-right:8px;">
                         </form>
                     </p>
                 </div>
             </div>
         </nav>
-    </div>
-
+</div>
     <body>
         <div class="list">
                 {% block content %}

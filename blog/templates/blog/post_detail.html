@@ -2,15 +2,7 @@
 
 {% block content %}
 
-<nav class="navbar is-fixed-bottom is-transparent">
-    <div class="navbar-end">
-        <div class="navbar-item">
-            <a onclick="toTop()" id="topBtn">
-                <i class="fas fa-chevron-circle-up"></i>
-            </a>
-        </div>
-    </div>
-</nav>
+
 
 <div class="profile">
     
@@ -22,10 +14,6 @@
     
 <div class="container is-fluid box" >
     <div class="post" >
-        <a href="{% url 'post_list' %}">
-            <button class="delete is-medium"
-            style="position:absolute; right:5%;margin-right: 10px;"></button>
-        </a>
         {% if post.published_date %}
         <div class="center">
             <div class="date">
@@ -37,26 +25,10 @@
         </div>
         <p style="text-align: left;">{{ post.text|linebreaksbr }}</p>
     </div>
+<br>
+    <a href="{% url 'post_list' %}" style="font-size:20px; ">
+        <i class="fas fa-chevron-left"></i>   back
+    </a>
 </div>
 
-<script>
-    var btn =document.getElementById("topBtn");
-
-    //if scrolls more than 20px
-    window.onscroll =function(){scrollFunct()};
-
-    function scrollFunct(){
-        if (document.body.scrollTop >20 || 
-            document.documentElement.scrollTop >20){
-                btn.style.display="block";
-            }else{
-                btn.style.display="none";
-            }    
-    }
-
-    function toTop(){
-        document.body.scrollTop =0;
-        document.documentElement.scrollTop =0;
-    }
-</script>
 {% endblock %}
