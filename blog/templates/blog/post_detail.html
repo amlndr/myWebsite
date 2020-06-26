@@ -1,15 +1,26 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+
+<nav class="navbar is-fixed-bottom is-transparent">
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <a onclick="toTop()" id="topBtn">
+                <i class="fas fa-chevron-circle-up"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
 <div class="profile">
+    
     <div class="level">
         <div class="level-item has-text-centered">
             <img class="myphoto" src="/static/images/ilus2.png" width="40%" height="40%">
         </div>
     </div>
+    
 <div class="container is-fluid box" >
-    <a onclick="toTop()" id="topBtn">
-        <i class="fas fa-chevron-circle-up"></i></a>
     <div class="post" >
         <a href="{% url 'post_list' %}">
             <button class="delete is-medium"

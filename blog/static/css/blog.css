@@ -72,9 +72,7 @@ a:hover{
 }
 
 #topBtn{
-    position:fixed;
-    bottom:40px;
-    right:40px;
+   
     font-size: 44px;
     display: none;
     
