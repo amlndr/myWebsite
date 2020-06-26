@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}" type="text/css" >
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
-        
+    <div class="container is-fluid">    
     <nav class="level" >
         <div class="level-left">
             <div class="level-item">
@@ -32,12 +32,13 @@
                             <input name="q" class="input is-rounded is-small " 
                                 type="text" placeholder="search an article..." 
                                 value="{{request.GET.q}}"
-                                style="width:300px;margin-right:8px;">
+                                style="width:300px;">
                         </form>
                     </p>
                 </div>
             </div>
         </nav>
+    </div>
 
     <body>
         <div class="list">
