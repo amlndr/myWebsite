@@ -23,10 +23,7 @@ a:hover{
 
 /*post list*/
 
-.desc{
-    margin:30px;
-    display:inline-block; text-align:center;
-}
+
 
 .profile{
     height:auto;
@@ -51,6 +48,7 @@ a:hover{
     display:inline-block;
     margin:10px;
     padding:10px;
+    width:600px;
 
 }
 
