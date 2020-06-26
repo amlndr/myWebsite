@@ -53,10 +53,9 @@
                                 <div class="date">
                                     {{ post.published_date }}
                                 </div>
-                                <h4 class="title is-4">
+                                <h4>
                                 <a class="titleLink" href="{% url 'post_detail' pk=post.pk %}">
                                 {{ post.title }}</a>
-                                </h4>
                                 <p style="font-size:12px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">
                                 {{ post.text }}
                                 </p> 
@@ -64,11 +63,11 @@
                         </div>
                     {% endfor %} 
                 </div>
-            </div>
-        </div>
+            
+        
     </div>
 
-<
+
 
 {% endblock %}
 
