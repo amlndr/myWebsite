@@ -54,9 +54,9 @@
                                     {{ post.published_date }}
                                 </div>
                                 <h4>
-                                <a class="titleLink" href="{% url 'post_detail' pk=post.pk %}">
-                                {{ post.title }}</a>
-                                <p style="font-size:30px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">
+                                <a class="titleLink" href="{% url 'post_detail' pk=post.pk %}" style="font-size:30px;;">
+                                <b>{{ post.title }}</b></a>
+                                <p style="font-size:15px;overflow:hidden ;white-space:nowrap; text-overflow:ellipsis;">
                                 {{ post.text }}
                                 </p> 
                             </div>
