@@ -6,4 +6,4 @@ myvenv
 dbsqlite3
 /static
 .DS.Store
-geckodriver
+
