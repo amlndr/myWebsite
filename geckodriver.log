@@ -1,0 +1,52 @@
+1594064666600	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofilevOr3Qa"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594064669947	Marionette	INFO	Listening on port 53997
+1594064670220	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/NetworkGeolocationProvider.jsm, line 555: TypeError: xhr.response.location is undefined
+1594065009583	Marionette	INFO	Stopped listening on port 53997
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofileUgTczZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594064911760	Marionette	INFO	Listening on port 54105
+1594064911818	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/NetworkGeolocationProvider.jsm, line 555: TypeError: xhr.response.location is undefined
+1594065008838	Marionette	INFO	Stopped listening on port 54105
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594064996116	Marionette	INFO	Listening on port 54176
+1594064996293	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594065008246	Marionette	INFO	Stopped listening on port 54176
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594065092647	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofileCOu61G"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594065094352	Marionette	INFO	Listening on port 54245
+1594065094667	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/AboutReaderChild.jsm, line 95: NS_ERROR_UNEXPECTED: 
+1594900685074	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofile8xvcVa"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594900687737	Marionette	INFO	Listening on port 50363
+1594900688212	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594900718703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofile0HesaZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594900720724	Marionette	INFO	Listening on port 50406
+1594900720820	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594900793974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofileub5gAy"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594900796222	Marionette	INFO	Listening on port 50472
+1594900796589	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594900909182	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NADIRA~1\\AppData\\Local\\Temp\\rust_mozprofile0VAyyp"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594900911209	Marionette	INFO	Listening on port 50523
+1594900911316	Marionette	WARN	TLS certificate errors will be ignored for this session

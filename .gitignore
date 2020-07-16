@@ -5,4 +5,5 @@ __pycache__
 myvenv
 dbsqlite3
 /static
-.DS.Store
+.DS.Storegeckodriver.log 
+"geckodriver.log" 
